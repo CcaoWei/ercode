@@ -1,0 +1,30 @@
+{
+  "id": "2274014",
+  "name": "扫码",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10885301",
+      "name": "疑问",
+      "font_class": "yiwen",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "7450650",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "16624130",
+      "name": "扫码支付",
+      "font_class": "saomazhifu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

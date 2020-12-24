@@ -1,0 +1,37 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="list-item">
+    <view class="purchase-order">
+    <view  class="order-info">
+      <view class="order-bt">采购单</view>
+      <view class="order-info-text-color" ><input type="text" bindinput="changeInput" auto-focus  bindblur="changeInput"  placeholder="请输入"/></view>
+    </view>
+    <!-- <view wx:if="{{hasSelect}}" class="order-info">
+      <view class="order-bt">采购单</view>
+
+      <view class="order-bt-number">CG202011010001</view> -->
+      <!-- <view class="order-info-text">货款  106776.00 <view class="people">采购  江文佳</view></view>
+      <view class="order-info-text">建单时间  2020-11-14 17:00</view>  -->
+    <!-- </view> -->
+  <!-- <span  class="iconfont icon-xiayibu next-style" bindtap="navToList"></span>  -->
+  </view> 
+  <view  wx:if="{{info.providerName!= ''}}" class="success-error">供应商：{{info.providerName}}</view>
+  <view wx:if="{{errorText != ''}}" class="error-text">{{errorText}}</view>
+  </view>
+ 
+
+ 
+<view class="list-item">
+  <view class="purchase-order">
+    <view class="order-info">
+      <view class="order-bt">物流母单号</view>
+      <input class="weui-input order-info-text" bindinput="changeNumber" value="{{info.courierNo}}"   placeholder="扫码输入或直接输入"/>
+      <input wx:if="{{hasPhone}}" class="weui-input order-info-text" bindinput="changePhone" value="{{info.phone}}"   placeholder="请输入收件人手机号"/>
+    </view>
+  <span  class="iconfont  icon-saomazhifu next-style"  bindtap="scanCode"></span> 
+  </view>
+</view>
+
+
+  <button  size="default" bindtap="saveInfo" class="save">保存</button>
+</view>

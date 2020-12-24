@@ -1,0 +1,54 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="list-box">
+
+
+    <view class="list-item">
+   
+      <view class="purchase-order">
+        <!-- <view wx:if="{{!hasSelect}}" class="order-info">
+      <view class="order-bt">采购单</view>
+      <view class="order-info-text-color" >请选择</view>
+    </view> -->
+        <view class="order-info">
+          <view class="order-bt">采购单</view>
+
+          <view class="order-bt-number">{{info.purchaseNo}}</view>
+          <!-- <view class="order-info-text">货款  106776.00 <view class="people">采购  江文佳</view></view>
+      <view class="order-info-text">建单时间  2020-11-14 17:00</view>  -->
+        </view>
+        <!-- <span  class="iconfont icon-xiayibu next-style" bindtap="navToList"></span>  -->
+      </view>
+      <view class="success-error">供应商：{{info.providerName}}</view>
+    </view>
+
+
+
+    <view class="list-item">
+      <view class="purchase-order">
+        <view class="order-info">
+          <view class="order-bt">物流母单号</view>
+          <input disabled="true" class="weui-input order-info-text" value="{{info.courierNo}}" auto-focus placeholder="扫码输入或直接输入" />
+          <view class="show-lo">{{info.courierName}} <view class="status">{{info.courierStatus}}</view></view>
+          <view>
+            <view class="log-item" wx:for="{{info.courierMessage}}" wx:key="index">
+              <view class="log-left">
+                  <view class="dot"></view>
+                  <view class="line"></view>
+              </view>
+              <view>
+                <view class="context">{{item.context}}</view>
+                <view class="time">{{item.time}}</view>
+              </view>
+               
+            </view>
+          </view>
+        </view>
+        <span class="iconfont  icon-saoma next-style" bindtap="scanCode"></span>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- <button size="default" bindtap="saveInfo" class="save">保存</button> -->
+</view>

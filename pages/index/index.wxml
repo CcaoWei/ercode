@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="content"> 
+    <span bindtap="scanCodeEv" class="iconfont icon-saomazhifu scanStyle"></span>
+    <view class="scan-text">扫码</view>
+  </view>
+  <view class="explain mt30">扫码二维码，输入采购单号&物流单号</view> 
+  <view class="explain">扫描二维码/物流单号，查看已输入的数据</view>
+</view>

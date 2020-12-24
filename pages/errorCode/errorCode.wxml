@@ -1,0 +1,6 @@
+<!--pages/errorCode/errorCode.wxml-->
+<view> 
+    <view   class="iconfont icon-yiwen scanStyle"></view>
+  <view class="error-text">未识别成功</view>
+  <view class="scan-code" bindtap="navToIndex">请重新扫码</view> 
+</view>
